@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情報モラルを学ぼう</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; position: relative; height: 100vh; margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .container { width: 90vw; display: flex; align-items: center; justify-content: center; gap: 20px; }
+        .image-container { width: 30%; }
+        .question-box { width: 30%; border: 4px solid black; padding: 20px; font-size: 22px; font-weight: bold; background-color: #f0f0f0; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+        img { width: 100%; max-width: 300px; height: auto; border: 2px solid #ccc; padding: 5px; }
+        .footer { position: absolute; bottom: 20px; left: 20px; font-size: 16px; color: gray; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="やり取り①.png" alt="やりとり1">
+        </div>
+        
+        <div class="question-box">
+            <div>この人たちはどんな関係だろう？</div>
+            <img src="登場人物.png" alt="登場人物">
+        </div>
+    </div>
+
+    <div class="footer" onclick="nextPage('page3.html')">©️清水第八中学校</div>
+
+    <script>
+        function nextPage(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>
