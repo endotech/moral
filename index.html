@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ネット上での友達とのやり取りを考えよう</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; position: relative; min-height: 100vh; }
+        .header { position: absolute; top: 20px; left: 20px; font-size: 20px; font-weight: bold; color: black; }
+        .title-box { border: 6px solid #FFD700; padding: 20px; display: inline-block; font-size: 28px; font-weight: bold; background-color: #FFEC8B; }
+        .container { margin: 50px auto; max-width: 900px; }
+        img { width: 80%; max-width: 500px; }
+        .btn { padding: 15px 30px; font-size: 18px; background-color: #007bff; color: white; border: none; cursor: pointer; margin-top: 30px; }
+        .footer { position: absolute; bottom: 60px; left: 20px; font-size: 14px; color: gray; }
+    </style>
+</head>
+<body>
+
+    <div class="header">情報モラル</div>
+
+    <div class="container">
+        <h1 class="title-box">ネット上での友達や知らない人とのやり取りを考えよう</h1>
+        <br><br>
+        <img src="登場人物.png" alt="登場人物">
+        <br><br>
+        <button class="btn" onclick="nextPage('page2.html')">学習スタート</button>
+    </div>
+
+    <div class="footer">©️清水第八中学校</div>
+
+    <script>
+        function nextPage(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>
